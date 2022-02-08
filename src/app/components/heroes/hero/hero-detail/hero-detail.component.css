@@ -1,0 +1,22 @@
+p {
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+strong {
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+strong::before {
+    content: '-> ';
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+.contenedor {
+    width: 60vw;
+}

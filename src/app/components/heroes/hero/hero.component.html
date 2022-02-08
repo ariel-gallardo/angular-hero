@@ -1,0 +1,13 @@
+<div class="card text-left animated fadeIn fast bg-light my-2" (mouseenter)="selectHeroe(Heroe?.nombre)">
+    <img class="card-img-top imagen img-thumbnail" [src]="Heroe?.img" alt="">
+    <div class="card-body d-flex flex-column justify-content-between">
+        <div class="mb-2">
+            <div>
+                <h4 class="card-title m-0">{{Heroe?.nombre}}</h4>
+                <p class="m-0">Familia <strong class="text-muted">{{Heroe?.casa}}</strong></p>
+            </div>
+            <p class="">Desde <strong>{{Heroe?.aparicion}}</strong></p>
+        </div>
+        <a (click)="verHeroe()" class="btn btn-outline-dark">Detalle</a>
+    </div>
+</div>

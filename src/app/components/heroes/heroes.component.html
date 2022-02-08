@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="fixed-top mt-5 py-4" *ngIf="nombreHeroe">
+        <p class="mx-3 my-0">Seleccion</p>
+        <p class="mx-3 my-0"><b>{{nombreHeroe}}</b></p>
+    </div>
+    <div *ngFor="let hero of getHeroList()" class="d-inline-flex p-lg-4">
+        <heroe (eventNombre)="setNombreHeroe($event)" [Heroe]="hero"></heroe>
+    </div>
+</div>

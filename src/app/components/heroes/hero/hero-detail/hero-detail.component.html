@@ -1,0 +1,15 @@
+<div class="container my-2 border p-5 d-flex justify-content-between contenedor">
+    <div>
+        <div class="">
+            <div>
+                <p class="m-0">Nombre <strong>{{heroe?.nombre}}</strong></p>
+                <p class="m-0">Familia <strong class="text-muted">{{heroe?.casa}}</strong></p>
+            </div>
+            <p class="">Desde <strong>{{heroe?.aparicion | date: 'y' }}</strong></p>
+        </div>
+        <button (click)="volverAtras()" class="btn btn-outline-success">Ok</button>
+    </div>
+    <div>
+        <img [src]="heroe?.img">
+    </div>
+</div>
